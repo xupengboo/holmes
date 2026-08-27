@@ -7,6 +7,7 @@ import HomeStats from './components/HomeStats/HomeStats.vue'
 import Dreams from './components/Dreams/Dreams.vue'
 import MyStory from './components/MyStory/MyStory.vue'
 import Hobbies from './components/Hobbies/Hobbies.vue'
+import FitnessPlan from './components/FitnessPlan/FitnessPlan.vue'
 import './custom.css'
 
 export default {
@@ -16,6 +17,7 @@ export default {
         app.component('Dreams', Dreams)
         app.component('MyStory', MyStory)
         app.component('Hobbies', Hobbies)
+        app.component('FitnessPlan', FitnessPlan)
     },
     // 全局钩子，仅网站启动时执行一次
     setup() {

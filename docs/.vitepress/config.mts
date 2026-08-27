@@ -76,6 +76,7 @@ export default defineConfig({
       { text: '💻 软件开发', link: '/dev/intro', activeMatch: '/dev/' },
       { text: '☁️ 运维与数据', link: '/ops/intro', activeMatch: '/ops/' },
       { text: '🤖 AI大模型', link: '/ai/intro', activeMatch: '/ai/' },
+      { text: '💪 健身训练', link: '/fitness/', activeMatch: '/fitness/' },
       { text: '👤 关于我', link: '/about' },
     ],
 
