@@ -269,8 +269,12 @@ function handlePrint() {
   --ex-why: #6b7078;
 
   position: relative;
+  display: block;
   overflow: hidden;
-  margin: 24px 0 48px;
+  /* 整页居中：外层容器已放宽，组件作为块级元素在容器中自然水平居中 */
+  margin: 24px auto 48px;
+  max-width: 1000px;
+  width: calc(100% - 32px);
   border: 1px solid var(--card-border);
   border-radius: 18px;
   background: var(--bg);
@@ -713,7 +717,8 @@ td.ex-why :deep(b) {
 /* ===== 响应式：手机端整体紧凑 + 表格转「动作卡片」 ===== */
 @media (max-width: 640px) {
   .fitness-app {
-    margin: 16px 0 32px;
+    margin: 16px auto 32px;
+    width: calc(100% - 16px);
     border-radius: 14px;
   }
   .wrap {
